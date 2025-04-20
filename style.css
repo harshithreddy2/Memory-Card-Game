@@ -1,0 +1,76 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #fff;
+    font-size: 36px;
+    margin-top: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.game-info {
+    margin: 10px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    background: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: #e65c50;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 120px);
+    gap: 15px;
+    justify-content: center;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    width: fit-content;
+}
+
+.card {
+    width: 120px;
+    height: 120px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: transform 0.5s, box-shadow 0.3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card.flip {
+    background-color: #fdd835;
+    transform: rotateY(180deg);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
